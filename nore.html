@@ -89,7 +89,7 @@
         }
 
         p {
-            color: white;
+            color: black;
         }
 
         #nore p {
@@ -99,12 +99,70 @@
         .body {
             transition: all 0.5s ease;
         }
+
+        .fade-in-image {
+            animation: fadeIn 5s;
+            -webkit-animation: fadeIn 5s;
+            -moz-animation: fadeIn 5s;
+            -o-animation: fadeIn 5s;
+            -ms-animation: fadeIn 5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-ms-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#161b33 ;">
-        <a class="navbar-brand" style="color:white" href="#">Dwi Nurfatma</a>
+        <a class="navbar-brand" style="color:white" href="index.html">Dwi Nurfatma</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -112,7 +170,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Havara</a>
+                    <a class="nav-link" href="havara.html">Havara</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="nore.html"><b>Nore</b></a>
@@ -131,108 +189,98 @@
                 </div>
             </div>
             <div class="card-body">
-                <div id="nore">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 ">
-                            <div class="col-sm">
-                                <h5 class="text-center" style="color:#474973; font-weight:bold">Nore Inovasi</h5>
-                                <h6 class="text-center" style="color:#a69cac ;">July 2021 - August 2021</h6>
-                                <p class="text-justify">Made an ecommerce design in figma and made it to website using
-                                    react
-                                    js.
-                                </p><br>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-lg-3 fade-in-image">
+                        <h5 class="text-center" style="color:#474973; font-weight:bold">Nore Inovasi</h5>
+                        <h6 class="text-center" style="color:#a69cac ;">July 2021 - August 2021</h6>
+                        <p class="text-justify">Made an ecommerce design in figma and made it to website using
+                            react
+                            js.
+                        </p><br>
 
-                                <p class="mt-5" style="font-style: italic;"><b>Note</b>: Click <a
-                                        href="https://www.figma.com/proto/dJ39RKhq8ZbHTnmEqD6NRA/nore?page-id=0%3A1&node-id=32%3A154&starting-point-node-id=32%3A154">this</a>
-                                    to see the full design
-                                </p>
-                            </div>
-                            <div class="col-sm">
-                                <div class="row ">
-                                    <a href="images/nore/home.png" data-toggle="lightbox" data-gallery="hidden-images"
-                                        data-title="Home" data-description="click to see the next image" class="pr-0">
-                                        <img src="images/nore/home.png" class="img-fluid"
-                                            style="border: 1px solid #0d0c1d;">
-                                    </a>
-                                </div>
-                                <div class="row ">
-                                    <a href="images/nore/cart.png" data-toggle="lightbox" data-gallery="hidden-images"
-                                        data-title="Cart" data-description="click to see the next image" class="pr-0">
-                                        <img src="images/nore/cart.png" class="img-fluid"
-                                            style="border: 1px solid #0d0c1d;">
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="col-sm">
-                                <div class="row ">
-                                    <a href="images/nore/login.png" data-toggle="lightbox" data-gallery="hidden-images"
-                                        data-title="Login" data-description="click to see the next image"
-                                        class="pr-0 pl-0">
-                                        <img src="images/nore/login.png" class="img-fluid"
-                                            style="border: 1px solid #0d0c1d;">
-                                    </a>
-                                </div>
-                                <div class="row ">
-                                    <a href="images/nore/profil.png" data-toggle="lightbox" data-gallery="hidden-images"
-                                        data-title="Profil" data-description="click to see the next image"
-                                        class="pr-0 pl-0">
-                                        <img src="images/nore/profil.png" class="img-fluid"
-                                            style="border: 1px solid #0d0c1d;">
-                                    </a>
-                                </div>
-                                <div class="row ">
-                                    <a href="images/nore/edit_profil.png" data-toggle="lightbox"
-                                        data-gallery="hidden-images" data-title="Edit Profil"
-                                        data-description="click to see the next image" class="pr-0 pl-0">
-                                        <img src="images/nore/edit_profil.png" class="img-fluid"
-                                            style="border: 1px solid #0d0c1d;">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <div class="row ">
-                                    <a href="images/nore/checkout.png" data-toggle="lightbox"
-                                        data-gallery="hidden-images" data-title="Checkout"
-                                        data-description="click to see the next image" class="pr-0 pl-0">
-                                        <img src="images/nore/checkout.png" class="img-fluid"
-                                            style="border: 1px solid #0d0c1d;">
-                                    </a>
-                                </div>
-                                <div class="row ">
-                                    <a href="images/nore/register.png" data-toggle="lightbox"
-                                        data-gallery="hidden-images" data-title="Register"
-                                        data-description="click to see the next image" class="pr-0 pl-0">
-                                        <img src="images/nore/register.png" class="img-fluid"
-                                            style="border: 1px solid #0d0c1d;">
-                                    </a>
-                                </div>
-                                <div class="row ">
-                                    <a href="images/nore/detail_product.png" data-toggle="lightbox"
-                                        data-gallery="hidden-images" data-title="Produk Detail"
-                                        data-description="click to see the next image" class="pr-0 pl-0">
-                                        <img src="images/nore/detail_product.png" class="img-fluid"
-                                            style="border: 1px solid #0d0c1d;">
-                                    </a>
-                                </div>
-                            </div>
-
+                        <p class="mt-5" style="font-style: italic;"><b>Note</b>: Click <a
+                                href="https://www.figma.com/proto/dJ39RKhq8ZbHTnmEqD6NRA/nore?page-id=0%3A1&node-id=32%3A154&starting-point-node-id=32%3A154">this</a>
+                            to see the full design
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-lg-3  fade-in-image">
+                        <div class="row">
+                            <a href="images/nore/home.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Home" data-description="click to see the next image" class="pr-0">
+                                <img src="images/nore/home.png" class="img-fluid" style="border: 1px solid #0d0c1d;">
+                            </a>
+                        </div>
+                        <div class="row ">
+                            <a href="images/nore/cart.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Cart" data-description="click to see the next image" class="pr-0">
+                                <img src="images/nore/cart.png" class="img-fluid" style="border: 1px solid #0d0c1d;">
+                            </a>
                         </div>
 
                     </div>
+                    <div class="col-sm-12 col-lg-3 fade-in-image">
+                        <div class="row ">
+                            <a href="images/nore/login.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Login" data-description="click to see the next image" class="pr-0 pl-0">
+                                <img src="images/nore/login.png" class="img-fluid" style="border: 1px solid #0d0c1d;">
+                            </a>
+                        </div>
+                        <div class="row ">
+                            <a href="images/nore/profil.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Profil" data-description="click to see the next image" class="pr-0 pl-0">
+                                <img src="images/nore/profil.png" class="img-fluid" style="border: 1px solid #0d0c1d;">
+                            </a>
+                        </div>
+                        <div class="row ">
+                            <a href="images/nore/edit_profil.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Edit Profil" data-description="click to see the next image"
+                                class="pr-0 pl-0">
+                                <img src="images/nore/edit_profil.png" class="img-fluid"
+                                    style="border: 1px solid #0d0c1d;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3 fade-in-image">
+                        <div class="row ">
+                            <a href="images/nore/checkout.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Checkout" data-description="click to see the next image" class="pr-0 pl-0">
+                                <img src="images/nore/checkout.png" class="img-fluid"
+                                    style="border: 1px solid #0d0c1d;">
+                            </a>
+                        </div>
+                        <div class="row ">
+                            <a href="images/nore/register.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Register" data-description="click to see the next image" class="pr-0 pl-0">
+                                <img src="images/nore/register.png" class="img-fluid"
+                                    style="border: 1px solid #0d0c1d;">
+                            </a>
+                        </div>
+                        <div class="row ">
+                            <a href="images/nore/detail_product.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Produk Detail" data-description="click to see the next image"
+                                class="pr-0 pl-0">
+                                <img src="images/nore/detail_product.png" class="img-fluid"
+                                    style="border: 1px solid #0d0c1d;">
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
-
         </div>
-        <br>
-        <!-- ** Lightbox Script ** -->
-        <script>
-            $(document).on("click", '[data-toggle="lightbox"]', function (event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
+    </div>
 
-            });
-        </script>
+    </div>
+    <br>
+    <!-- ** Lightbox Script ** -->
+    <script>
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+
+        });
+    </script>
 
 
     </div>

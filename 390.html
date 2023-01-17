@@ -99,12 +99,70 @@
         .body {
             transition: all 0.5s ease;
         }
+
+        .fade-in-image {
+            animation: fadeIn 5s;
+            -webkit-animation: fadeIn 5s;
+            -moz-animation: fadeIn 5s;
+            -o-animation: fadeIn 5s;
+            -ms-animation: fadeIn 5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-ms-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#161b33 ;">
-        <a class="navbar-brand" style="color:white" href="#">Dwi Nurfatma</a>
+        <a class="navbar-brand" style="color:white" href="index.html">Dwi Nurfatma</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -112,7 +170,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Havara</a>
+                    <a class="nav-link" href="havara.html">Havara</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="nore.html">Nore</a>
@@ -130,77 +188,76 @@
                     <h1 class="text-center p-4" style="font-weight:bold;color: white;">390 Second Stuff</h1>
                 </div>
             </div>
-            <div id="ss">
+            <div class="card-body">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 ">
-                        <div class="col-sm">
-                            <div class="row ">
-                                <a href="images/ss/home.png" data-toggle="lightbox" data-gallery="hidden-images"
-                                    data-title="Home" data-description="click to see the next image">
-                                    <img src="images/ss/home.png" class="img-fluid">
-                                </a>
-                            </div>
-                            <!-- elements not showing, use data-remote -->
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/produk.png"
-                                data-title="Product"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/love.png"
-                                data-title="Wishlist"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/cart.png"
-                                data-title="Cart"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images"
-                                data-remote="images/ss/checkout.png" data-title="Checkout"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/ongkir.png"
-                                data-title="Opsi Ongkir"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images"
-                                data-remote="images/ss/transaksi.png" data-title="List Transaksi"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/method.png"
-                                data-title="Metode Pembayaran"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/login.png"
-                                data-title="Login"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images"
-                                data-remote="images/ss/register.png" data-title="Register"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/profil.png"
-                                data-title="Profil"></div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="row fade-in-image">
+                            <a href="images/ss/home.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Home" data-description="click to see the next image">
+                                <img src="images/ss/home.png" class="img-fluid">
+                            </a>
                         </div>
+                        <!-- elements not showing, use data-remote -->
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/produk.png"
+                            data-title="Product"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/love.png"
+                            data-title="Wishlist"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/cart.png"
+                            data-title="Cart"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/checkout.png"
+                            data-title="Checkout"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/ongkir.png"
+                            data-title="Opsi Ongkir"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/transaksi.png"
+                            data-title="List Transaksi"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/method.png"
+                            data-title="Metode Pembayaran"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/login.png"
+                            data-title="Login"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/register.png"
+                            data-title="Register"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/profil.png"
+                            data-title="Profil"></div>
+                    </div>
 
-                        <div class="col-sm">
-                            <h5 class="text-center mt-3" style="color:#f1dac4; font-weight:bold ">390 Second Stuff</h5>
-                            <h6 class="text-center" style="color:#a69cac ;">January 2021 - March 2021</h6>
-                            <p class="text-justify">Made an ecommerce website using laravel framework and MySQL database
-                                integrate with Rajaongkir and midtrans payment method
-                            </p><br>
-                            <p class="text-justify">The up side ( <i class="fa-solid fa-arrow-up"
-                                    style="color: red;"></i> ) shows the user
-                                interface of the
-                                visitors to see the services and do the transactions</p><br>
-                            <p class="text-justify">The down side ( <i class="fa-solid fa-arrow-down"
-                                    style="color: red;"></i> ) shows the
-                                administrator page which include the process of CRUD (Create, Read,
-                                Update, Delete) of the datas and see the income and the outcome of the store</p>
-                            <p class="mt-5" style="font-style: italic;"><b>Note</b>: Click the image to see the next
-                                image
-                            </p>
+                    <div class="col-sm-12 col-lg-4 fade-in-image">
+                        <h5 class="text-center mt-3" style="color:#f1dac4; font-weight:bold ">390 Second Stuff</h5>
+                        <h6 class="text-center" style="color:#a69cac ;">January 2021 - March 2021</h6>
+                        <p class="text-justify">Made an ecommerce website using laravel framework and MySQL database
+                            integrate with Rajaongkir and midtrans payment method
+                        </p><br>
+                        <p class="text-justify">The up side ( <i class="fa-solid fa-arrow-up" style="color: red;"></i> )
+                            shows the user
+                            interface of the
+                            visitors to see the services and do the transactions</p><br>
+                        <p class="text-justify">The down side ( <i class="fa-solid fa-arrow-down"
+                                style="color: red;"></i> ) shows the
+                            administrator page which include the process of CRUD (Create, Read,
+                            Update, Delete) of the datas and see the income and the outcome of the store</p>
+                        <p class="mt-5" style="font-style: italic;"><b>Note</b>: Click the image to see the next
+                            image
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="row fade-in-image">
+                            <a href="images/ss/home_admin.png" data-toggle="lightbox" data-gallery="hidden-images"
+                                data-title="Home Admin" data-description="click to see the next image">
+                                <img src="images/ss/home_admin.png" class="img-fluid">
+                            </a>
                         </div>
-                        <div class="col-sm">
-                            <div class="row">
-                                <a href="images/ss/home_admin.png" data-toggle="lightbox" data-gallery="hidden-images"
-                                    data-title="Home Admin" data-description="click to see the next image">
-                                    <img src="images/ss/home_admin.png" class="img-fluid">
-                                </a>
-                            </div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/stok.png"
-                                data-title="Stok"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/laporan.png"
-                                data-title="Laporan"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/status.png"
-                                data-title="Status Pesanan"></div>
-                            <div data-toggle="lightbox" data-gallery="hidden-images"
-                                data-remote="images/ss/produk_admin.png" data-title="Produk Admin"></div>
-                        </div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/stok.png"
+                            data-title="Stok"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/laporan.png"
+                            data-title="Laporan"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="images/ss/status.png"
+                            data-title="Status Pesanan"></div>
+                        <div data-toggle="lightbox" data-gallery="hidden-images"
+                            data-remote="images/ss/produk_admin.png" data-title="Produk Admin"></div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
     <!-- ** Lightbox Script ** -->
